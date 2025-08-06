@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About - {{ title }}</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>About {{ title }}</h1>
+  </header>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </nav>
+
+  <main>
+    <p>We are a small but mighty team passionate about cloud technologies, full-stack web development, and continuous deployment.</p>
+
+    <ul>
+      <li>⚙️ Built using Flask (Python)</li>
+      <li>☁️ Hosted on Azure App Service</li>
+      <li>🔁 CI/CD powered by GitHub Actions</li>
+    </ul>
+
+    <button onclick="location.href='/'">Back to Home</button>
+    <button onclick="location.href='/contact'">Contact Us</button>
+  </main>
+
+  <footer>&copy; 2025 {{ title }}</footer>
+</body>
+</html>

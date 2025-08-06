@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact - {{ title }}</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact {{ title }}</h1>
+  </header>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </nav>
+
+  <main>
+    <p>If you’d like to reach out, fill out the form below or email us at:</p>
+    <p><strong>Email:</strong> support@example.com</p>
+
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" rows="4" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <button onclick="location.href='/'">Back to Home</button>
+    <button onclick="location.href='/about'">About Us</button>
+  </main>
+
+  <footer>&copy; 2025 {{ title }}</footer>
+</body>
+</html>

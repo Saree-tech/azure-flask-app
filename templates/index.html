@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>{{ title }}</h1>
+  </header>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Welcome to {{ title }}!</h2>
+    <p>This site is built with Flask, styled with custom CSS, and deployed using Azure App Service and GitHub Actions.</p>
+
+    <button onclick="location.href='/about'">Learn About Us</button>
+    <button onclick="location.href='/contact'">Get in Touch</button>
+  </main>
+
+  <footer>&copy; 2025 {{ title }}. All rights reserved.</footer>
+</body>
+</html>
