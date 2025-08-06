@@ -3,7 +3,7 @@ name: Deploy Flask App to Azure Web App
 on:
   push:
     branches:
-      - master  # 👈 Change this if your branch is 'main'
+      - master
 
 jobs:
   build-and-deploy:
@@ -26,6 +26,6 @@ jobs:
       - name: 🚀 Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
-          app-name: flask-app-web  # 👈 Replace with your actual Azure Web App name
+          app-name: flask-app-web                     # 👈 your Azure Web App name
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: .
