@@ -1,4 +1,4 @@
-name: Deploy Flask App to Azure Web App (Staging)
+name: Deploy Flask App to Azure Web App (Staging).
 
 on:
   push:
